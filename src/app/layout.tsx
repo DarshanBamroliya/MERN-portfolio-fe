@@ -7,13 +7,13 @@ import CustomCursor from "./CustomCursor";
 const promptFont = Prompt({
   variable: "--font-prompt",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const averiaSerif = Averia_Serif_Libre({
   variable: "--font-averia-serif",
   subsets: ["latin"],
-  weight: ["300","400", "700"],
+  weight: ["300", "400", "700"],
 });
 
 const caudexFont = Caudex({
@@ -25,7 +25,7 @@ const caudexFont = Caudex({
 const openSans = Open_Sans({
   variable: "--font-open-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {

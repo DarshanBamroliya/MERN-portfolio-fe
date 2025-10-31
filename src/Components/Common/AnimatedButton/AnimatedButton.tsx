@@ -22,7 +22,7 @@ const AnimatedButton = ({ label = 'Scroll to explore', icon = <IoIosArrowRoundDo
     <button
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`relative overflow-hidden border border-black px-10 py-5 rounded-full text-sm flex items-center gap-2 transition-colors duration-500 
+      className={`relative overflow-hidden border border-black md:px-10 md:py-5 px-8 py-3 rounded-full text-sm flex items-center gap-2 transition-colors duration-500 
         ${hovered ? 'text-white' : 'text-black'}
         ${hovered ? 'button-bg-hover' : ''} 
         ${leave ? 'button-bg-leave' : ''}

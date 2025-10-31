@@ -13,7 +13,7 @@ function HeroSec() {
   };
 
   return (
-    <div className='relative w-full sm:h-screen h-[75vh] overflow-hidden'>
+    <div className='relative w-full sm:h-screen h-[70vh] overflow-hidden'>
       <video
         className="hero-video"
         autoPlay
@@ -25,13 +25,13 @@ function HeroSec() {
         <source src="/img/home-video.mp4" type="video/mp4"/>
       </video>
       <div className="hero-overlay" />
-      <section className="absolute top-0 right-0 left-0 sm:mt-10 mt-28">
+      <section className="absolute top-0 right-0 left-0 sm:mt-0 mt-8 h-full w-full flex items-center justify-center">
         {/* Background video */}
 
-        <div className='flex flex-col items-center justify-center'>
-          <div className='text-center w-full flex flex-col items-center absolute top-0'>
+        <div className='flex flex-col items-center justify-center relative w-full'>
+          <div className='text-center w-full flex flex-col items-center absolute md:-top-2 -top-1'>
             <FaAsterisk className='text-4xl sm:text-5xl md:text-6xl' />
-            <div className='mt-8 sm:mt-10 px-2'>
+            <div className='mt-6 sm:mt-10 px-2'>
               <h1 className="font-open-sans font-[600] leading-[1] text-4xl sm:text-5xl md:text-7xl xl:text-[15vh]">We create Feelings.</h1>
             </div>
           </div>
@@ -45,12 +45,12 @@ function HeroSec() {
             style={{ borderRadius: '150px 150px 0 0' }}
           />
 
-          <p className="text-base sm:text-lg md:text-xl pt-4 sm:pt-5 font-averia tracking-wider font-extrabold mt-1 sm:mt-2">
+          <p className="text-base sm:text-lg md:text-xl lg:pt-4 md:pt-2 font-averia tracking-wider font-bold mt-1 sm:mt-2">
             <span className='tracking-[5]'>MERN</span> Stack Developer
           </p>
 
           {/* Scroll Button */}
-          <AnimatedButton className="mt-4 sm:mt-6" onClick={handleScrollDown} />
+          <AnimatedButton className="mt-4 lg:mt-6 md:mt-3 sm:mt-6" onClick={handleScrollDown} />
         </div>
       </section>
     </div>

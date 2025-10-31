@@ -1,14 +1,18 @@
 import React from 'react';
 import HeroSec from './Pages/Herosec/page';
 import Header from './Common/Header/page';
-import OurProject from './Pages/OurProject/page';
+import SelectedProjects from './Pages/SelectedProjects/page';
+import AboutUs from './Pages/Aboutme/page';
+import Footer from './Common/Footer/page';
 
 function HomePage() {
   return (
     <>
       <HeroSec />
+      <SelectedProjects />
+      <AboutUs />
       <Header />
-      <OurProject />
+      <Footer />
     </>
   )
 }
