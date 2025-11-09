@@ -13,7 +13,7 @@ function HeroSec() {
   };
 
   return (
-    <div className='relative w-full sm:h-screen h-[70vh] overflow-hidden'>
+    <div className='relative w-full sm:h-screen h-[70vh] overflow-hidden z-1'>
       <video
         className="hero-video"
         autoPlay

@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 
 export default function CustomCursor() {
   const [enabled, setEnabled] = useState(false);
+  const [isHovering, setIsHovering] = useState(false);
   const dotRef = useRef<HTMLDivElement | null>(null);
   const ringRef = useRef<HTMLDivElement | null>(null);
 
@@ -31,6 +32,17 @@ export default function CustomCursor() {
 
       if (dot) {
         dot.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+      }
+
+      // Check if hovering over an interactive element or footer
+      const elementUnderCursor = document.elementFromPoint(e.clientX, e.clientY);
+      
+      if (elementUnderCursor && !elementUnderCursor.classList.contains('cursor')) {
+        const isInteractive = elementUnderCursor.closest('a, button, [role="button"], input, select, textarea, [onclick], [data-clickable], .cursor-hover');
+        const isFooter = elementUnderCursor.closest('footer');
+        setIsHovering(!!(isInteractive || isFooter));
+      } else {
+        setIsHovering(false);
       }
     };
 
@@ -71,8 +83,14 @@ export default function CustomCursor() {
 
   return (
     <>
-      <div ref={dotRef} className="cursor cursor-style:dot" />
-      <div ref={ringRef} className="cursor cursor-style:ring" />
+      <div 
+        ref={dotRef} 
+        className={`cursor cursor-style:dot ${isHovering ? 'cursor-hover' : ''}`}
+      />
+      <div 
+        ref={ringRef} 
+        className={`cursor cursor-style:ring ${isHovering ? 'cursor-hover' : ''}`} 
+      />
     </>
   );
 }
