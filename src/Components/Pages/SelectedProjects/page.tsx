@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import AnimatedButton from '../../Common/AnimatedButton/AnimatedButton';
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -59,8 +59,6 @@ const projects: Project[] = [
 ];
 
 function SelectedProjects() {
-  const [hoveredProject, setHoveredProject] = useState<number | null>(null);
-
   return (
     <section className="md:py-20 py-16 px-4 sm:px-6 lg:px-8 bg-white relative z-1">
       <div className='font-caudex lg:text-7xl md:text-5xl text-3xl font-normal'><span className='font-normal'>SELECTED <i>PROJECTS</i></span></div>
