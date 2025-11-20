@@ -92,7 +92,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
                 )}
 
                 {/* Scope of Work */}
-                {project.scope?.length > 0 && (
+                {Array.isArray(project.scope) && project.scope.length > 0 && (
                   <div className="flex py-6 border-b border-[#101010]">
                     <h3 className="uppercase w-[50%] text-sm md:text-lg tracking-wider text-[#101010]/80 font-medium">
                       Scope of Work
@@ -132,7 +132,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
           </div>
 
           {/* Images Section */}
-          {project.images?.length > 0 && (
+          {Array.isArray(project.images) && project.images.length > 0 && (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 lg:gap-12 md:mb-20 lg:mb-14 mb-10">
               {project.images.map((img, i) => (
                 <div key={i} className="relative w-full aspect-[21/12] overflow-hidden">

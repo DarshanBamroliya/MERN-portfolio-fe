@@ -45,7 +45,7 @@ export default function ProjectsPage() {
             </div>
           </div>
         </div>
-        <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="mb-16 md:mb-20 lg:mb-24">
             <h1 className="font-caudex text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px] leading-[1.1]">
@@ -70,14 +70,14 @@ export default function ProjectsPage() {
                 <Link href={`/project/${project.slug}`} className="group block">
                   <div className="flex items-center gap-4 lg:py-6 border-0 lg:border-b lg:border-[#808080] group-hover:border-[#0c0c0c] transition-all duration-300">
                     {/* Title */}
-                    <div className="w-[430px]">
+                    <div className="w-[450px]">
                       <h2 className="font-averia uppercase lg:text-[1rem] sm:text-[0.8rem] text-[0.6rem] tracking-wide text-[#808080] group-hover:text-[#0c0c0c] transition-all duration-300">
                         {project.title}
                       </h2>
                     </div>
 
                     {/* Categories */}
-                    <div className="w-[430px]">
+                    <div className="w-[450px]">
                       <p className="font-averia uppercase lg:text-[1rem] sm:text-[0.8rem] text-[0.6rem] tracking-wide text-[#808080] group-hover:text-[#0c0c0c] transition-all duration-300">
                         {project.categories.join(', ')}
                       </p>
@@ -89,7 +89,7 @@ export default function ProjectsPage() {
                   </div>
 
                   {/* Mobile + Tablet Thumbnail */}
-                  <div className="lg:hidden relative w-full h-[260px] sm:h-[300px] md:h-[350px] mt-3 overflow-hidden border border-black/10 shadow-md">
+                  <div className="image-static relative w-full h-[260px] sm:h-[300px] md:h-[350px] mt-3 overflow-hidden border border-black/10 shadow-md">
                     <Image
                       src={project.image}
                       alt={project.title}
@@ -104,14 +104,13 @@ export default function ProjectsPage() {
             {/* 👇 Desktop Hover Preview 👇 */}
             {hoveredProjectData && (
               <div
-                className="hidden lg:block fixed z-50 pointer-events-none transition-all duration-300"
+                className="hidden fixed z-50 pointer-events-none transition-all duration-300 image-hover-preview"
                 style={{
-                  right: '18%',
                   top: previewTop ?? 0,
                   transform: 'translateY(-50%)',
                 }}
               >
-                <div className="relative w-[550px] h-[350px] overflow-hidden shadow-2xl border border-black/10 bg-white">
+                <div className="relative overflow-hidden shadow-2xl border border-black/10 bg-white image-hover-preview-container">
                   {/* Glow blob */}
                   <div className="absolute -z-10 w-[650px] h-[400px] bg-[#e5e2ff] rounded-[100px] blur-[90px] opacity-60 -translate-x-12 -translate-y-10"></div>
 

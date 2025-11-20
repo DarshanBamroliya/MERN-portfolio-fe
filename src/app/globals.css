@@ -304,3 +304,29 @@ body {
 .marquee:hover .marquee__content {
   animation-play-state: paused;
 }
+
+@media (min-width:1200px) {
+  .image-hover-preview {
+    right: 5%!important;
+  }
+  .image-hover-preview-container {
+    width: 400px!important;
+    height: 240px!important;
+  }
+  .image-hover-preview{
+    display: block!important;
+  }
+  .image-static{
+    display: none!important;
+  }
+}
+
+@media (min-width:1500px) {
+  .image-hover-preview {
+    right: 18%!important;
+  }
+  .image-hover-preview-container {
+    width: 550px!important;
+    height: 340px!important;
+  }
+}

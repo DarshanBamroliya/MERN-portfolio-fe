@@ -58,7 +58,7 @@ function Header() {
   ];
 
   // Navigation items for top bar (non-home pages)
-  const topNavItems = [
+  const topNavItems: Array<{ title: string; link: string; count?: number; hasArrow?: boolean }> = [
     { title: 'Projects', link: '/projects', count: pathname === '/projects' ? undefined : 10 },
     { title: 'About', link: '/about' },
     { title: 'Contact', link: '/contact' },
