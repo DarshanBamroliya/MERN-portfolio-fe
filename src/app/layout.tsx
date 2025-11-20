@@ -50,6 +50,7 @@ export default function RootLayout({
         className={`${promptFont.variable} ${averiaSerif.variable} ${caudexFont.variable} ${openSans.variable} ${bodoniModa.variable} antialiased`}
       >
         <CustomCursor />
+
         {/* Header is rendered per-page (below Hero) */}
         {children}
 

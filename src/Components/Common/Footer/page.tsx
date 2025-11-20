@@ -24,6 +24,18 @@ function Footer() {
 
   return (
     <div className="bg-black text-white sticky bottom-0 w-full overflow-hidden md:min-h-[80vh] min-h-[60vh] flex flex-col justify-between py-5">
+      <div className="mx-width underlay px-4 sm:px-6 lg:px-8">
+        <div className="grid:2 g-wrapper grid">
+          <div className="grid:2 grid">
+            <div ></div>
+            <div className='lg:block hidden'></div>
+          </div>
+          <div className="grid:2 grid">
+            <div></div>
+            <div className='lg:block hidden'></div>
+          </div>
+        </div>
+      </div>
       <div className="flex flex-col justify-evenly items-center md:h-[70vh] h-[50vh]">
         <div className="font-averia uppercase text-sm">
           Have a project in mind?
@@ -41,18 +53,16 @@ function Footer() {
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
             onClick={() => (window.location.href = "mailto:darshan.b@gmail.com")}
-            className={`relative overflow-hidden border border-white md:px-10 md:py-5 px-8 py-3 rounded-full text-sm flex items-center gap-2 transition-colors duration-500 ${
-              hovered ? "text-black" : "text-white"
-            }`}
+            className={`relative overflow-hidden border border-white md:px-10 md:py-5 px-8 py-3 rounded-full text-sm flex items-center gap-2 transition-colors duration-500 ${hovered ? "text-black" : "text-white"
+              }`}
           >
             <span className="relative z-10">darshan.b@gmail.com</span>
             <IoIosArrowRoundForward size={24} className="relative z-10" />
 
             {/* Animated white fill */}
             <span
-              className={`absolute top-0 left-0 h-full bg-white transition-all duration-500 ease-in-out origin-left ${
-                hovered ? "w-full" : "w-0"
-              }`}
+              className={`absolute top-0 left-0 h-full bg-white transition-all duration-500 ease-in-out origin-left ${hovered ? "w-full" : "w-0"
+                }`}
             ></span>
           </button>
         </div>

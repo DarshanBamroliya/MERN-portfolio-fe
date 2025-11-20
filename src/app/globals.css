@@ -11,8 +11,10 @@ body {
 
 /* Theme variables */
 :root {
-  --bg: #fcfaf8; /* light foreground content color */
-  --fg: #101010; /* dark foreground/background inverse */
+  --bg: #fcfaf8;
+  /* light foreground content color */
+  --fg: #101010;
+  /* dark foreground/background inverse */
 }
 
 
@@ -163,17 +165,21 @@ body {
   top: 0;
   left: 0;
   translate: -50% -50%;
-  scale: 1;
+  /* scale: 1; */
 }
 
 .cursor.cursor-style\:dot:after {
-  background-color: #fcfaf8;
   content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  block-size: 15px;
+  translate: -50% -50%;
+  inline-size: 15px;
   border-radius: 50%;
-  block-size: 12px;
-  inline-size: 12px;
-  transition: scale .25s;
-  display: block;
+  background-color: #fcfaf8;
+  transform: scale(1);
+  transition: transform .3s ease, background-color .3s ease;
 }
 
 .cursor-style\:ring {
@@ -181,9 +187,9 @@ body {
   mix-blend-mode: exclusion;
   background: 0 0;
   border-radius: 50%;
-  block-size: 35px;
-  inline-size: 35px;
-  transition: background-color .25s, border-color .25s;
+  block-size: 37px;
+  inline-size: 37px;
+  /* transition: background-color .25s, border-color .25s; */
 }
 
 .cursor.cursor-style\:dot {
@@ -196,12 +202,13 @@ body {
 
 /* Hover state - expanded dot and filled ring */
 .cursor.cursor-style\:dot.cursor-hover:after {
-  display: none;
+  transform: scale(3.45);
+  /* 12px x 3.75 = ~45px */
+  background-color: #fcfaf8;
 }
 
 .cursor.cursor-style\:ring.cursor-hover {
-  background-color: #fcfaf8;
-  border-color: #fcfaf8;
+  display: none;
 }
 
 .underlay {
@@ -214,8 +221,33 @@ body {
   right: 0;
 }
 
+.underlay .grid\:2 {
+  gap: unset;
+  block-size: 100%;
+}
+
+.grid\:2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.underlay .grid\:2>:not(.grid\:2) {
+  opacity: .085;
+  border-inline-start: 1px solid;
+  border-inline-end: 1px solid;
+}
+
+.g-wrapper {
+  container: grid / inline-size;
+}
+
+@container grid (width < 75ch) {
+  [class*=grid] {
+    grid-template-columns: 1fr;
+  }
+}
+
 .mx-width {
-  --inline-size: 1440px;
+  --space-0: 1rem;
   max-width: min(100% - var(--space-0) * 2, var(--inline-size));
   width: 100%;
   margin-inline-start: auto;
@@ -248,8 +280,13 @@ body {
 
 /* Marquee (infinite horizontal scroll) */
 @keyframes marquee-scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .marquee {

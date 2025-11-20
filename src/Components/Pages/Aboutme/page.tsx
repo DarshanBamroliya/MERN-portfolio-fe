@@ -5,8 +5,8 @@ import { IoIosArrowRoundForward } from 'react-icons/io';
 
 function AboutUs() {
   return (
-    <section id="about" className="md:py-20 py-10 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-100 rounded-b-[68px] relative z-1">
-      <div className="mx-auto grid grid-cols-12 gap-6 md:gap-8 pb-14">
+    <section id="about" className="md:py-20 py-10 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto grid grid-cols-12 gap-6 md:gap-8 sm:pb-14 pb-8">
         <div className="col-span-12 lg:col-span-2">
           <div className="mb-6 lg:mb-0">
             <span className="font-averia text-[12px] tracking-[0.25em] uppercase text-[#111]"><span data-gsap="slidein" data-gsap-dur="0.75">✺</span>About Me</span>

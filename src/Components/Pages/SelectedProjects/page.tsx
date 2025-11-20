@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import AnimatedButton from '../../Common/AnimatedButton/AnimatedButton';
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -60,7 +61,7 @@ const projects: Project[] = [
 
 function SelectedProjects() {
   return (
-    <section className="md:py-20 py-16 px-4 sm:px-6 lg:px-8 bg-white relative z-1">
+    <section className="md:py-20 py-16 px-4 sm:px-6 lg:px-8 relative z-1">
       <div className='font-caudex lg:text-7xl md:text-5xl text-3xl font-normal'><span className='font-normal'>SELECTED <i>PROJECTS</i></span></div>
       <div className='pt-10'>
         {Array.from({ length: Math.ceil(projects.length / 2) }, (_, gridIndex) => {
@@ -109,14 +110,13 @@ function SelectedProjects() {
         
         {/* View More Button */}
         <div className="flex md:mt-0 mt-5">
-          <AnimatedButton 
-            label="View More" 
-            icon={<IoIosArrowRoundForward size={24} />}
-            onClick={() => {
-              // Add your navigation logic here
-              console.log('View More clicked');
-            }}
-          />
+          <Link href="/projects">
+            <AnimatedButton 
+              label="View More" 
+              icon={<IoIosArrowRoundForward size={24} />}
+              onClick={() => {}}
+            />
+          </Link>
         </div>
       </div>
     </section>
