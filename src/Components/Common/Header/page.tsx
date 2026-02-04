@@ -79,7 +79,7 @@ function Header() {
 
               {/* Right: Navigation Links */}
               <div className="hidden md:flex items-center gap-6 lg:gap-8">
-                {topNavItems.map((item, index) => (
+                {topNavItems.map((item) => (
                   <Link
                     key={item.title}
                     href={item.link}

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Header from '@/Components/Common/Header/page';
 import Footer from '@/Components/Common/Footer/page';
@@ -67,8 +67,6 @@ const experiences: Experience[] = [
 ];
 
 export default function AboutPage() {
-  const [hovered, setHovered] = useState(false);
-
   return (
     <>
       <Header />
