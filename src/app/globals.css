@@ -330,3 +330,8 @@ body {
     height: 340px!important;
   }
 }
+
+/* About page — decorative gradient blob behind portrait */
+.about-decorative-blob {
+  background: radial-gradient(ellipse at 30% 40%, #e8a4b8 0%, #c77dff 40%, #f4a261 80%);
+}

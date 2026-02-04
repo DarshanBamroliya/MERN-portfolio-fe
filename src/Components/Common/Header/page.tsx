@@ -52,7 +52,7 @@ function Header() {
 
   // Left vertical menu items
   const sideMenu = [
-    { title: 'Contact', link: '/footer' },
+    { title: 'Contact', link: '/contact' },
     { title: 'About Us', link: '/about' },
     { title: 'Projects', link: '/projects' },
   ];

@@ -7,13 +7,13 @@ function AboutUs() {
   return (
     <section id="about" className="md:py-20 py-10 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto grid grid-cols-12 gap-6 md:gap-8 sm:pb-14 pb-8">
-        <div className="col-span-12 lg:col-span-2">
+        <div className="col-span-12 lg:col-span-3">
           <div className="mb-6 lg:mb-0">
             <span className="font-averia text-[12px] tracking-[0.25em] uppercase text-[#111]"><span data-gsap="slidein" data-gsap-dur="0.75">✺</span>About Me</span>
           </div>
         </div>
 
-        <div className="col-span-12 lg:col-span-10">
+        <div className="col-span-12 lg:col-span-9">
           <h2 className="font-caudex font-normal lg:text-[44px] md:text-[34px] sm:text-[20px] text-[18px] leading-[1.15] text-[#0f0f0f]">
             I’m a <span className="italic">MERN</span> full‑stack developer crafting fast, accessible,
             and scalable web apps — from clean UI to reliable, production‑ready APIs.
