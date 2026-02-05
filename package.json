@@ -17,6 +17,9 @@
     "react-icon": "^1.0.0",
     "react-icons": "^5.5.0"
   },
+  "overrides": {
+    "core-js": "^3.23.3"
+  },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
