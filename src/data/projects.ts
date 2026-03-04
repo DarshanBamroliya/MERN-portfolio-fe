@@ -82,9 +82,9 @@ Look you anyways shop every week & we have all those products & categories for y
       'MyCash Loyalty System',
       'Real-time Gift Voucher Redemption'
     ],
-    image: '/img/moby.png',
+    image: '/img/Moby.png',
     images: [
-      '/img/moby.png'
+      '/img/Moby.png'
     ],
     playstoreLink: 'https://play.google.com/store/apps/details?id=com.mobyads&hl=en_IN',
     webLink: 'https://app.mobyads.in/',
