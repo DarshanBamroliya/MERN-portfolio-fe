@@ -22,7 +22,7 @@ function HeroSec() {
         playsInline
         aria-hidden="true"
       >
-        <source src="/img/home-video.mp4" type="video/mp4"/>
+        <source src="/img/home-video.mp4" type="video/mp4" />
       </video>
       <div className="hero-overlay" />
       <section className="absolute top-0 right-0 left-0 sm:mt-0 mt-8 h-full w-full flex items-center justify-center">

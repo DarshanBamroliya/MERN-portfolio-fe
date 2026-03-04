@@ -88,6 +88,13 @@ function Footer() {
               >
                 GitHub
               </Link>
+              <Link
+                href="https://www.upwork.com/freelancers/darshanb14?mp_source=share"
+                target="_blank"
+                className="opacity-90 hover:opacity-100"
+              >
+                Upwork
+              </Link>
             </div>
           </div>
         </div>

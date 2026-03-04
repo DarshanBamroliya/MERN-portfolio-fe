@@ -65,7 +65,7 @@ export default function ProjectsPage() {
                 key={project.id}
                 onMouseEnter={(e) => handleMouseEnter(e, project.id)}
                 onMouseLeave={handleMouseLeave}
-                className='lg:mb-0 mb-10'
+                className='lg:mb-0 mb-8'
               >
                 <Link href={`/project/${project.slug}`} className="group block">
                   <div className="flex items-center gap-4 lg:py-6 border-0 lg:border-b lg:border-[#808080] group-hover:border-[#0c0c0c] transition-all duration-300">
@@ -89,7 +89,7 @@ export default function ProjectsPage() {
                   </div>
 
                   {/* Mobile + Tablet Thumbnail */}
-                  <div className="image-static relative w-full h-[260px] sm:h-[300px] md:h-[350px] mt-3 overflow-hidden border border-black/10 shadow-md">
+                  <div className="image-static relative w-full h-[200px] sm:h-[300px] md:h-[350px] mt-2 overflow-hidden border border-black/10 shadow-md">
                     <Image
                       src={project.image}
                       alt={project.title}
@@ -110,15 +110,18 @@ export default function ProjectsPage() {
                   transform: 'translateY(-50%)',
                 }}
               >
-                <div className="relative overflow-hidden shadow-2xl border border-black/10 bg-white image-hover-preview-container">
-                  {/* Glow blob */}
-                  <div className="absolute -z-10 w-[650px] h-[400px] bg-[#e5e2ff] rounded-[100px] blur-[90px] opacity-60 -translate-x-12 -translate-y-10"></div>
-
+                <div className="relative 
+                    max-w-[400px] 
+                    w-full 
+                    overflow-hidden 
+                    bg-transparent 
+                    image-hover-preview-container">
                   <Image
                     src={hoveredProjectData.image}
                     alt={hoveredProjectData.title}
-                    fill
-                    className="object-cover object-center scale-[1.02] group-hover:scale-[1.05] transition-transform duration-500 ease-out"
+                    width={800}   // large base width
+                    height={1000} // large base height
+                    className="max-w-full max-h-full w-auto h-auto object-contain transition-transform duration-500 ease-out"
                   />
                 </div>
               </div>

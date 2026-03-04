@@ -307,27 +307,37 @@ body {
 
 @media (min-width:1200px) {
   .image-hover-preview {
-    right: 5%!important;
+    right: 5% !important;
   }
+
   .image-hover-preview-container {
-    width: 400px!important;
-    height: 240px!important;
+    width: 600px !important;
+    height: 400px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .image-hover-preview{
-    display: block!important;
+
+  .image-hover-preview {
+    display: block !important;
   }
-  .image-static{
-    display: none!important;
+
+  .image-static {
+    display: none !important;
   }
 }
 
 @media (min-width:1500px) {
   .image-hover-preview {
-    right: 18%!important;
+    right: 15% !important;
   }
+
   .image-hover-preview-container {
-    width: 550px!important;
-    height: 340px!important;
+    width: 800px !important;
+    height: 533px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

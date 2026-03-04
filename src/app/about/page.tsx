@@ -90,39 +90,39 @@ export default function AboutPage() {
             {/* Portrait image + decorative shapes (top on mobile, left on desktop) */}
             <div className="order-1 lg:sticky lg:top-28 flex justify-center">
               <div className="relative max-w-[300px] sm:max-w-[400px] w-full">
-              {/* Decorative: white circle top-left */}
-              <div
-                className="absolute top-0 left-0 w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-white shadow-lg z-10 -translate-x-2 -translate-y-2"
-                aria-hidden
-              />
-              {/* Decorative: green star burst right side */}
-              <div
-                className="absolute top-[55%] right-0 w-12 h-12 md:w-14 md:h-14 z-10 opacity-90"
-                aria-hidden
-              >
-                <svg viewBox="0 0 24 24" fill="none" className="w-full h-full text-[#6bcf7f]">
-                  <path d="M12 2L13.5 8.5L20 10L13.5 11.5L12 18L10.5 11.5L4 10L10.5 8.5L12 2Z" fill="currentColor" />
-                </svg>
-              </div>
-              {/* Decorative: pink star bottom-left */}
-              <div
-                className="absolute bottom-[8%] left-0 w-8 h-8 md:w-10 md:h-10 z-10 opacity-90"
-                aria-hidden
-              >
-                <svg viewBox="0 0 24 24" fill="none" className="w-full h-full text-[#e8a4b8]">
-                  <path d="M12 2L13.5 8.5L20 10L13.5 11.5L12 18L10.5 11.5L4 10L10.5 8.5L12 2Z" fill="currentColor" />
-                </svg>
-              </div>
-              {/* Image: max-width 400px, height auto */}
-              <Image
-                src="/img/me_black.png"
-                alt="Darshan B. — Full Stack Developer"
-                width={500}
-                height={533}
-                className="w-full h-auto max-w-[300px] sm:max-w-[400px] block mx-auto"
-                sizes="(max-width: 1024px) 100vw, 400px"
-                priority
-              />
+                {/* Decorative: white circle top-left */}
+                <div
+                  className="absolute top-0 left-0 w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-white shadow-lg z-10 -translate-x-2 -translate-y-2"
+                  aria-hidden
+                />
+                {/* Decorative: green star burst right side */}
+                <div
+                  className="absolute top-[55%] right-0 w-12 h-12 md:w-14 md:h-14 z-10 opacity-90"
+                  aria-hidden
+                >
+                  <svg viewBox="0 0 24 24" fill="none" className="w-full h-full text-[#6bcf7f]">
+                    <path d="M12 2L13.5 8.5L20 10L13.5 11.5L12 18L10.5 11.5L4 10L10.5 8.5L12 2Z" fill="currentColor" />
+                  </svg>
+                </div>
+                {/* Decorative: pink star bottom-left */}
+                <div
+                  className="absolute bottom-[8%] left-0 w-8 h-8 md:w-10 md:h-10 z-10 opacity-90"
+                  aria-hidden
+                >
+                  <svg viewBox="0 0 24 24" fill="none" className="w-full h-full text-[#e8a4b8]">
+                    <path d="M12 2L13.5 8.5L20 10L13.5 11.5L12 18L10.5 11.5L4 10L10.5 8.5L12 2Z" fill="currentColor" />
+                  </svg>
+                </div>
+                {/* Image: max-width 400px, height auto */}
+                <Image
+                  src="/img/me_black.png"
+                  alt="Darshan B. — Full Stack Developer"
+                  width={500}
+                  height={533}
+                  className="w-full h-auto max-w-[300px] sm:max-w-[400px] block mx-auto"
+                  sizes="(max-width: 1024px) 100vw, 400px"
+                  priority
+                />
               </div>
             </div>
 
@@ -147,14 +147,21 @@ export default function AboutPage() {
                 <AnimatedButton
                   label="Get my résumé"
                   icon={<IoIosArrowRoundForward size={24} />}
-                  onClick={() => window.open('#', '_blank')}
+                  onClick={() => {
+                    const link = document.createElement('a');
+                    link.href = '/img/Darshan_MERN_CV.pdf';
+                    link.download = 'Darshan_MERN_CV.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }}
                 />
               </div>
             </div>
           </div>
 
           {/* ——— Design line (5px rounded) ——— */}
-          <hr className='mt-12 sm:mt-16 md:mt-20 border-0 border-t border-[#101010]/50'/>
+          <hr className='mt-12 sm:mt-16 md:mt-20 border-0 border-t border-[#101010]/50' />
 
           {/* ——— What I do section: Title on top (mobile) / left (desktop), content below/right ——— */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-5 mt-12 sm:mt-16 md:mt-20 items-start">
@@ -185,10 +192,10 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <hr className='mt-12 sm:mt-16 md:mt-20 border-0 border-t border-[#101010]/50'/>
+          <hr className='mt-12 sm:mt-16 md:mt-20 border-0 border-t border-[#101010]/50' />
 
           {/* ——— Experiences: Title on top (mobile) / left (desktop), list below/right ——— */}
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-5 mt-16 md:mt-20 items-start">
             <div className="order-1">
               <h2 className="font-caudex font-normal text-2xl md:text-3xl lg:text-4xl text-[#0f0f0f] italic">
