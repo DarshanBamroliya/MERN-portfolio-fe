@@ -5,7 +5,7 @@ import Image from 'next/image';
 import AnimatedButton from '../../Common/AnimatedButton/AnimatedButton';
 import { IoIosArrowRoundForward } from "react-icons/io";
 
-import { projects, Project } from '@/data/projects';
+import { projects } from '@/data/projects';
 
 function SelectedProjects() {
   return (
@@ -16,7 +16,6 @@ function SelectedProjects() {
           const selectedProjects = projects.slice(0, 6);
           const firstProject = selectedProjects[gridIndex * 2];
           const secondProject = selectedProjects[gridIndex * 2 + 1];
-          const isLastGrid = gridIndex === Math.ceil(selectedProjects.length / 2) - 1;
 
           return (
             <div key={gridIndex} className="grid grid-cols-12 gap-6 md:gap-10 pb-6">
