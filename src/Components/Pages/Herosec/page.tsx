@@ -32,12 +32,12 @@ function HeroSec() {
           <div className='text-center w-full flex flex-col items-center absolute md:-top-2 -top-1'>
             <FaAsterisk className='text-4xl sm:text-5xl md:text-6xl' />
             <div className='mt-6 sm:mt-10 px-2'>
-              <h1 className="font-open-sans font-[600] leading-[1] text-4xl sm:text-5xl md:text-7xl xl:text-[15vh]">We create Feelings.</h1>
+              <h1 className="font-open-sans font-bold leading-[1] text-4xl sm:text-5xl md:text-7xl xl:text-[15vh]">We create Feelings.</h1>
             </div>
           </div>
           {/* Profile Image */}
           <Image
-            src="/img/me.jpg"
+            src="/img/me2.png"
             alt="Profile"
             width={301}
             height={432}
@@ -45,8 +45,8 @@ function HeroSec() {
             style={{ borderRadius: '150px 150px 0 0' }}
           />
 
-          <p className="text-base sm:text-lg md:text-xl lg:pt-4 md:pt-2 font-averia tracking-wider font-bold mt-1 sm:mt-2">
-            <span className='tracking-[5]'>MERN</span> Stack Developer
+          <p className="text-sm sm:text-lg md:text-xl lg:pt-4 md:pt-2 font-averia tracking-wider font-bold mt-2">
+            <span className='tracking-[5]'>MERN & MEAN</span> Stack Developer
           </p>
 
           {/* Scroll Button */}

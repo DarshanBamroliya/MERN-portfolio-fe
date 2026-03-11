@@ -116,7 +116,7 @@ export default function AboutPage() {
                 {/* Image: max-width 400px, height auto */}
                 <Image
                   src="/img/me_black.png"
-                  alt="Darshan B. — Full Stack Developer"
+                  alt="Darshan B. — MERN & MEAN Stack Developer"
                   width={500}
                   height={533}
                   className="w-full h-auto max-w-[300px] sm:max-w-[400px] block mx-auto"
@@ -137,7 +137,7 @@ export default function AboutPage() {
               </h1>
 
               <p className="font-averia mt-6 text-xs sm:text-sm md:text-lg leading-relaxed text-[#333]/80 max-w-2xl">
-                Hi there! I&apos;m <strong className='text-[#333]'>Darshan B.</strong>, a rising Full Stack Developer passionate about crafting dynamic, scalable, and user-friendly web applications that deliver real business value.
+                Hi there! I&apos;m <strong className='text-[#333]'>Darshan B.</strong>, a rising MERN & MEAN Stack Developer passionate about crafting dynamic, scalable, and user-friendly web applications that deliver real business value.
               </p>
               <p className="font-averia mt-4 text-xs sm:text-sm md:text-lg leading-relaxed text-[#333]/80 max-w-2xl">
                 With strong expertise across frontend, backend, and database systems, I focus on building modern digital solutions that are reliable, fast, and future-ready. I thrive on solving challenges and turning ideas into production-ready products.

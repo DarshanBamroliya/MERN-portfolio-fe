@@ -20,6 +20,7 @@ export interface Project {
   webLinks?: string[];
   technologies?: string[];
   features?: string[];
+  stack?: 'MERN' | 'MEAN';
 }
 
 export const projects: Project[] = [
@@ -82,6 +83,7 @@ Look you anyways shop every week & we have all those products & categories for y
       'MyCash Loyalty System',
       'Real-time Gift Voucher Redemption'
     ],
+    stack: 'MERN',
     image: '/img/Moby.png',
     images: [
       '/img/Moby.png'
@@ -134,6 +136,7 @@ Download Klaynice today and start building the relationship you’ve always drea
       'Apple Pay Integration',
       'OpenAI Based Insights'
     ],
+    stack: 'MERN',
     image: '/img/klaynice.png',
     images: [
       '/img/klaynice.png'
@@ -173,6 +176,7 @@ Key Highlights:
       'Responsive UI Design',
       'Modern State Management'
     ],
+    stack: 'MERN',
     image: '/img/gocart.png',
     images: [
       '/img/gocart.png'
@@ -206,6 +210,7 @@ Key Highlights:
       'Secure API Architecture',
       'Real-time Notifications'
     ],
+    stack: 'MERN',
     image: '/img/farmstayhub.png',
     images: [
       '/img/farmstayhub.png'
@@ -240,6 +245,7 @@ Key Highlights:
       'Task & Project Management',
       'Cloud-Based Access'
     ],
+    stack: 'MERN',
     image: '/img/idurar.png',
     images: [
       '/img/idurar.png'
@@ -271,6 +277,7 @@ Key Highlights:
       'Trading Workshops & Education',
       'Retirement Strategy Guides'
     ],
+    stack: 'MEAN',
     image: '/img/btc.png',
     images: [
       '/img/btc.png'
@@ -302,6 +309,7 @@ Key Highlights:
       'Order Status Tracking',
       'Fully Responsive Layout'
     ],
+    stack: 'MERN',
     image: '/img/food.png',
     images: [
       '/img/food.png'
@@ -333,6 +341,7 @@ Key Highlights:
       'Personalized Patient Dashboard',
       'Real-time Booking Confirmation'
     ],
+    stack: 'MERN',
     image: '/img/doc_app.png',
     images: [
       '/img/doc_app.png'
@@ -364,6 +373,7 @@ Key Highlights:
       'Personal User Gallery',
       'High-Speed Visual Processing'
     ],
+    stack: 'MERN',
     image: '/img/imagefy.png',
     images: [
       '/img/imagefy.png'
@@ -396,6 +406,7 @@ Key Highlights:
       'Advanced Admin Dashboard',
       'Real-time Revenue Analytics'
     ],
+    stack: 'MERN',
     image: '/img/quickshow.png',
     images: [
       '/img/quickshow.png'
@@ -427,6 +438,7 @@ Key Highlights:
       'Comprehensive Car Specifications',
       'Frictionless Booking System'
     ],
+    stack: 'MERN',
     image: '/img/car_rent.png',
     images: [
       '/img/car_rent.png'

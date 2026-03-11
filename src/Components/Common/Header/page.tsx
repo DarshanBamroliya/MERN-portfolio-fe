@@ -8,7 +8,7 @@ function Header() {
   const pathname = usePathname();
   const [now, setNow] = useState<Date | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  
+
   // Check if we're on home page
   const isHomePage = pathname === '/';
 
@@ -170,7 +170,7 @@ function Header() {
           <div className="flex items-center gap-2">
             <div className="leading-none">
               <div className="font-caudex text-base">Darshan B.</div>
-              <div className="text-[8px] uppercase tracking-[0.2em] opacity-70">Full Stack Dev</div>
+              <div className="text-[8px] uppercase tracking-[0.2em] opacity-70">MERN & MEAN Stack Dev</div>
             </div>
           </div>
           {/* Right: Menu toggle button */}
@@ -250,7 +250,7 @@ function Header() {
       <div className="hidden sm:block absolute left-4 bottom-[30%] -translate-y-1/2 pointer-events-none">
         <h1 className="font-caudex text-lg leading-none">Darshan B.</h1>
         <p className="mt-1 text-[10px] tracking-[0.25em] uppercase opacity-70">
-          Full Stack Developer
+          MERN & MEAN Stack Developer
         </p>
 
         {/* SVG Sign */}

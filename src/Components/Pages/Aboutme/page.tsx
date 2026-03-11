@@ -15,12 +15,12 @@ function AboutUs() {
 
         <div className="col-span-12 lg:col-span-9">
           <h2 className="font-caudex font-normal lg:text-[44px] md:text-[34px] sm:text-[20px] text-[18px] leading-[1.15] text-[#0f0f0f]">
-            I’m a <span className="italic">MERN</span> full‑stack developer crafting fast, accessible,
+            I’m a <span className="italic">MERN & MEAN</span> full‑stack developer crafting fast, accessible,
             and scalable web apps — from clean UI to reliable, production‑ready APIs.
           </h2>
 
           <p className="font-averia md:text-lg sm:text-sm text-[12px] md:leading-7 sm:leading-5 leading-4 text-[#333] md:mt-6 mt-4 max-w-3xl">
-          I turn product ideas into exceptional digital experiences using modern React patterns, TypeScript, and Node.js. I’m passionate about performance, accessibility, and writing maintainable code that teams love to build, ship, and scale.
+            I turn product ideas into exceptional digital experiences using modern React patterns, TypeScript, and Node.js. I’m passionate about performance, accessibility, and writing maintainable code that teams love to build, ship, and scale.
           </p>
 
           <div className="md:mt-8 mt-6">

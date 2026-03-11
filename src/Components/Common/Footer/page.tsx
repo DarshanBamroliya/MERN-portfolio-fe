@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { FaLinkedin, FaGithub } from "react-icons/fa6";
+import { SiUpwork } from "react-icons/si";
 
 function Footer() {
   const [now, setNow] = useState("");
@@ -77,23 +79,26 @@ function Footer() {
               <Link
                 href="https://www.linkedin.com/in/darshanbamroliya/"
                 target="_blank"
-                className="opacity-90 hover:opacity-100"
+                className="opacity-90 hover:opacity-100 flex items-center gap-2 group"
               >
-                LinkedIn
+                <FaLinkedin className="text-lg group-hover:scale-110 transition-transform" />
+                <span className="hidden sm:inline">LinkedIn</span>
               </Link>
               <Link
                 href="https://github.com/darshanbamroliya"
                 target="_blank"
-                className="opacity-90 hover:opacity-100"
+                className="opacity-90 hover:opacity-100 flex items-center gap-2 group"
               >
-                GitHub
+                <FaGithub className="text-lg group-hover:scale-110 transition-transform" />
+                <span className="hidden sm:inline">GitHub</span>
               </Link>
               <Link
                 href="https://www.upwork.com/freelancers/darshanb14?mp_source=share"
                 target="_blank"
-                className="opacity-90 hover:opacity-100"
+                className="opacity-90 hover:opacity-100 flex items-center gap-2 group"
               >
-                Upwork
+                <SiUpwork className="text-lg group-hover:scale-110 transition-transform" />
+                <span className="hidden sm:inline">Upwork</span>
               </Link>
             </div>
           </div>
