@@ -152,36 +152,28 @@ Download Klaynice today and start building the relationship you’ve always drea
   },
   {
     id: 3,
-    slug: 'gocart',
-    title: 'GoCart',
-    categories: ['Web Application', 'E-commerce'],
-    description: 'A powerful multi-vendor e-commerce platform that allows vendors to register, manage their own products, and sell on a single platform with ease.',
-    fullDescription: `GoCart is a comprehensive multi-vendor e-commerce solution designed to empower both vendors and customers. It provides a seamless shopping experience through a beautiful, responsive storefront while offering robust management tools for platform owners and independent sellers.
-
-The platform streamlines the complexities of multi-vendor operations, from vendor registration and product management to sales analytics and commission tracking. With a focus on modern user experience and performance, GoCart offers a scalable architecture suitable for growing digital marketplaces.
-
-Key Highlights:
-- Multi-Vendor Architecture: Scalable system allowing multiple vendors to operate independently under one roof.
-- Professional Storefront: Highly optimized and responsive customer interface built with Next.js.
-- Vendor Empowerment: Detailed dashboards for inventory management and sales tracking.
-- Operational Excellence: Centralized admin control for total platform oversight and governance.`,
-    year: '2025',
-    role: 'Full Stack Developer',
-    technologies: ['Next.js', 'Tailwind CSS', 'Redux Toolkit', 'Lucide React', 'React'],
+    slug: 'broadcast-media-expo',
+    title: 'Broadcast Media & Cinema Expo – Multi-Device Exhibitor Portal',
+    categories: ['Web Application', 'Event Management'],
+    description: 'A scalable event platform for India\'s premier trade show for broadcast and media technology, designed to streamline exhibitor onboarding, booth management, and event engagement with automated workflows.',
+    fullDescription: "India's premier trade platform for the broadcasting, media, and cinema industry, specifically serving the vibrant South India entertainment ecosystem. The platform connects industry professionals, showcases industry innovations, and drives business growth through a sophisticated digital experience. \n\nThe core of the platform is a sophisticated exhibitor portal that simplifies the entire onboarding lifecycle. I implemented complex booking logic for 'Space Only' (minimum 18 sqm) and 'Shell Scheme' (minimum 9 sqm) configurations, with dynamic rate management for both domestic and international exhibitors. The system includes an automated discount engine for Early Bird programs, Referral incentives, and rewards for returning 2025 exhibitors. \n\nTechnical highlights include a structured 50/50 payment tracking system, automated bank transfer verification, and a robust admin dashboard built with Payload CMS. The platform ensures high performance, accessibility, and smooth interaction across all devices, managing exhibitor profiles, social media promotion, and customer ticket allocation for a seamless event management experience.",
+    year: '2026',
+    role: 'Full-Stack Developer',
+    technologies: ['Next.js', 'PostgreSQL', 'Tailwind CSS', 'Payload CMS', 'Performance Optimization'],
     features: [
-      'Multi-Vendor Architecture',
-      'Customer-Facing Storefront',
-      'Vendor Dashboards',
-      'Admin Panel & Commission Management',
-      'Responsive UI Design',
-      'Modern State Management'
+      'Streamlined Exhibitor Onboarding Lifecycle',
+      'Dynamic Booth Management (Space Only & Shell Scheme)',
+      'Automated Discount Logic (Early Bird & Referral)',
+      'Structured 50/50 Payment Tracking System',
+      'Exhibitor Social Media & Profile Management',
+      'High-Performance Multi-Device Responsive UI'
     ],
     stack: 'MERN',
-    image: '/img/gocart.png',
+    image: '/img/Brodcast_expo.png',
     images: [
-      '/img/gocart.png'
+      '/img/Brodcast_expo.png'
     ],
-    webLink: 'https://www.gocart.cloud/',
+    webLink: 'https://broadcastmediacinemaexpo.com/'
   },
   {
     id: 4,
@@ -254,6 +246,39 @@ Key Highlights:
   },
   {
     id: 6,
+    slug: 'gocart',
+    title: 'GoCart',
+    categories: ['Web Application', 'E-commerce'],
+    description: 'A powerful multi-vendor e-commerce platform that allows vendors to register, manage their own products, and sell on a single platform with ease.',
+    fullDescription: `GoCart is a comprehensive multi-vendor e-commerce solution designed to empower both vendors and customers. It provides a seamless shopping experience through a beautiful, responsive storefront while offering robust management tools for platform owners and independent sellers.
+
+The platform streamlines the complexities of multi-vendor operations, from vendor registration and product management to sales analytics and commission tracking. With a focus on modern user experience and performance, GoCart offers a scalable architecture suitable for growing digital marketplaces.
+
+Key Highlights:
+- Multi-Vendor Architecture: Scalable system allowing multiple vendors to operate independently under one roof.
+- Professional Storefront: Highly optimized and responsive customer interface built with Next.js.
+- Vendor Empowerment: Detailed dashboards for inventory management and sales tracking.
+- Operational Excellence: Centralized admin control for total platform oversight and governance.`,
+    year: '2025',
+    role: 'Full Stack Developer',
+    technologies: ['Next.js', 'Tailwind CSS', 'Redux Toolkit', 'Lucide React', 'React'],
+    features: [
+      'Multi-Vendor Architecture',
+      'Customer-Facing Storefront',
+      'Vendor Dashboards',
+      'Admin Panel & Commission Management',
+      'Responsive UI Design',
+      'Modern State Management'
+    ],
+    stack: 'MERN',
+    image: '/img/gocart.png',
+    images: [
+      '/img/gocart.png'
+    ],
+    webLink: 'https://www.gocart.cloud/',
+  },
+  {
+    id: 7,
     slug: 'base-camp-trading',
     title: 'Base Camp Trading',
     categories: ['Web Application', 'FinTech', 'Education'],
@@ -285,7 +310,7 @@ Key Highlights:
     webLink: 'https://basecamptrading.com/'
   },
   {
-    id: 7,
+    id: 8,
     slug: 'tomato-food',
     title: 'Tomato Food',
     categories: ['Web Application', 'E-commerce'],
@@ -317,7 +342,7 @@ Key Highlights:
     webLink: 'https://tomatofood.vercel.app/'
   },
   {
-    id: 8,
+    id: 9,
     slug: 'prescripto',
     title: 'Prescripto',
     categories: ['Web Application', 'Healthcare'],
@@ -349,7 +374,7 @@ Key Highlights:
     webLink: 'https://prescriptoapp-wheat.vercel.app/'
   },
   {
-    id: 9,
+    id: 10,
     slug: 'imagify',
     title: 'Imagify',
     categories: ['Web Application', 'AI & Creative'],
@@ -381,7 +406,7 @@ Key Highlights:
     webLink: 'https://imagify-master.vercel.app/'
   },
   {
-    id: 10,
+    id: 11,
     slug: 'quickshow',
     title: 'QuickShow',
     categories: ['Web Application', 'Entertainment'],
@@ -414,7 +439,7 @@ Key Highlights:
     webLink: 'https://quickshow.vercel.app/'
   },
   {
-    id: 11,
+    id: 12,
     slug: 'car-rental',
     title: 'Car Rental',
     categories: ['Web Application', 'Transportation'],

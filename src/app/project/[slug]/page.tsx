@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { getProjectBySlug, getAllProjectSlugs } from '@/data/projects';
 import Header from '@/Components/Common/Header/page';
 import Footer from '@/Components/Common/Footer/page';
+import BackButton from '@/Components/Common/BackButton/BackButton';
 import { FaArrowLeft } from 'react-icons/fa6';
 
 interface ProjectDetailPageProps {
@@ -45,13 +46,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
         </div>
         <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
           <div className="mb-3">
-            <Link
-              href="/projects"
-              className="inline-flex items-center gap-2 font-averia text-sm md:text-base text-[#101010]/60 hover:text-[#101010] transition group"
-            >
-              <FaArrowLeft />
-              Back to Projects
-            </Link>
+            <BackButton />
           </div>
 
           <h1 className="font-caudex text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#101010] md:mb-10 mb-4 leading-tight">
